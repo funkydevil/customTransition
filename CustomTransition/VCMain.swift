@@ -9,13 +9,13 @@
 import UIKit
 
 class VCMain: UIViewController {
-    @IBOutlet weak var scrollView: UIScrollView!
+    
+    @IBOutlet weak var btnTapMe: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        self.makeSlides()
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,17 +23,11 @@ class VCMain: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    func makeSlides() {
-        for i in 0...10 {
-            let vSlide = VSlide.xib()
-            vSlide.width = self.scrollView.width
-            vSlide.height = self.scrollView.height
-            vSlide.left = self.scrollView.width * Double(i)
-            vSlide.lblText.text = String(i)
-            self.scrollView.addSubview(vSlide)
-            self.scrollView.contentSize = CGSize(width: vSlide.right, height: self.scrollView.height)
-        }
-    }
 
+    @IBAction func onBtnTapMeTapped(_ sender: Any) {
+        let vcYellow = self.storyboard!.instantiateViewController(withIdentifier: "VCYellow") as! VCYellow
+        vcYellow.startFrame = self.btnTapMe.frame;
+        self.present(vcYellow, animated: true, completion: nil)
+    }
 }
 

@@ -1,1 +1,1 @@
-# customTransition
+# Пример custom transition

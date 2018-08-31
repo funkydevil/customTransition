@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F14F470B21305EE1006201A3 /* VCYellow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14F470A21305EE1006201A3 /* VCYellow.swift */; };
+		F14F470F2134B314006201A3 /* AnimatorPresent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14F470E2134B314006201A3 /* AnimatorPresent.swift */; };
+		F14F47132137645D006201A3 /* AnimatorDismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14F47122137645D006201A3 /* AnimatorDismiss.swift */; };
 		F1DE883D2130572900B6B688 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DE883C2130572900B6B688 /* AppDelegate.swift */; };
 		F1DE883F2130572900B6B688 /* VCMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DE883E2130572900B6B688 /* VCMain.swift */; };
 		F1DE88422130572900B6B688 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1DE88402130572900B6B688 /* Main.storyboard */; };
 		F1DE88442130572B00B6B688 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1DE88432130572B00B6B688 /* Assets.xcassets */; };
 		F1DE88472130572B00B6B688 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1DE88452130572B00B6B688 /* LaunchScreen.storyboard */; };
-		F1DE88502130575800B6B688 /* KP_UIView+utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DE884E2130575800B6B688 /* KP_UIView+utils.swift */; };
-		F1DE88512130575800B6B688 /* KP_VC+utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DE884F2130575800B6B688 /* KP_VC+utils.swift */; };
-		F1DE88542130590600B6B688 /* VSlide.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1DE88532130590600B6B688 /* VSlide.xib */; };
-		F1DE88562130591200B6B688 /* VSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DE88552130591200B6B688 /* VSlide.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F14F470A21305EE1006201A3 /* VCYellow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCYellow.swift; sourceTree = "<group>"; };
+		F14F470E2134B314006201A3 /* AnimatorPresent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatorPresent.swift; sourceTree = "<group>"; };
+		F14F47122137645D006201A3 /* AnimatorDismiss.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatorDismiss.swift; sourceTree = "<group>"; };
 		F1DE88392130572900B6B688 /* CustomTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1DE883C2130572900B6B688 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1DE883E2130572900B6B688 /* VCMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCMain.swift; sourceTree = "<group>"; };
@@ -26,10 +28,6 @@
 		F1DE88432130572B00B6B688 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1DE88462130572B00B6B688 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1DE88482130572B00B6B688 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F1DE884E2130575800B6B688 /* KP_UIView+utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KP_UIView+utils.swift"; sourceTree = "<group>"; };
-		F1DE884F2130575800B6B688 /* KP_VC+utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KP_VC+utils.swift"; sourceTree = "<group>"; };
-		F1DE88532130590600B6B688 /* VSlide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VSlide.xib; sourceTree = "<group>"; };
-		F1DE88552130591200B6B688 /* VSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSlide.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,26 +60,17 @@
 		F1DE883B2130572900B6B688 /* CustomTransition */ = {
 			isa = PBXGroup;
 			children = (
-				F1DE88522130575E00B6B688 /* KP_UTILS */,
 				F1DE883C2130572900B6B688 /* AppDelegate.swift */,
 				F1DE883E2130572900B6B688 /* VCMain.swift */,
+				F14F470A21305EE1006201A3 /* VCYellow.swift */,
+				F14F470E2134B314006201A3 /* AnimatorPresent.swift */,
+				F14F47122137645D006201A3 /* AnimatorDismiss.swift */,
 				F1DE88402130572900B6B688 /* Main.storyboard */,
-				F1DE88552130591200B6B688 /* VSlide.swift */,
-				F1DE88532130590600B6B688 /* VSlide.xib */,
 				F1DE88432130572B00B6B688 /* Assets.xcassets */,
 				F1DE88452130572B00B6B688 /* LaunchScreen.storyboard */,
 				F1DE88482130572B00B6B688 /* Info.plist */,
 			);
 			path = CustomTransition;
-			sourceTree = "<group>";
-		};
-		F1DE88522130575E00B6B688 /* KP_UTILS */ = {
-			isa = PBXGroup;
-			children = (
-				F1DE884E2130575800B6B688 /* KP_UIView+utils.swift */,
-				F1DE884F2130575800B6B688 /* KP_VC+utils.swift */,
-			);
-			path = KP_UTILS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,7 +133,6 @@
 			files = (
 				F1DE88472130572B00B6B688 /* LaunchScreen.storyboard in Resources */,
 				F1DE88442130572B00B6B688 /* Assets.xcassets in Resources */,
-				F1DE88542130590600B6B688 /* VSlide.xib in Resources */,
 				F1DE88422130572900B6B688 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,11 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1DE88562130591200B6B688 /* VSlide.swift in Sources */,
 				F1DE883F2130572900B6B688 /* VCMain.swift in Sources */,
-				F1DE88502130575800B6B688 /* KP_UIView+utils.swift in Sources */,
 				F1DE883D2130572900B6B688 /* AppDelegate.swift in Sources */,
-				F1DE88512130575800B6B688 /* KP_VC+utils.swift in Sources */,
+				F14F47132137645D006201A3 /* AnimatorDismiss.swift in Sources */,
+				F14F470F2134B314006201A3 /* AnimatorPresent.swift in Sources */,
+				F14F470B21305EE1006201A3 /* VCYellow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

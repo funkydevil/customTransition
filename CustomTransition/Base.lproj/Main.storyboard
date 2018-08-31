@@ -18,28 +18,76 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hBL-7Z-rHn">
-                                <rect key="frame" x="0.0" y="183.5" width="375" height="300"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WeA-KJ-vRf">
+                                <rect key="frame" x="112" y="283.5" width="150" height="100"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="pTw-SE-BBE"/>
+                                    <constraint firstAttribute="width" constant="150" id="oBF-Bb-B4u"/>
+                                    <constraint firstAttribute="height" constant="100" id="zwK-AE-zF3"/>
                                 </constraints>
-                            </scrollView>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="TAP ME">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onBtnTapMeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pKk-cg-oc9"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.49803921569999998" green="0.76078431369999999" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hBL-7Z-rHn" secondAttribute="trailing" id="VvI-Od-IQ7"/>
-                            <constraint firstItem="hBL-7Z-rHn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="o94-Ev-LZ3"/>
-                            <constraint firstItem="hBL-7Z-rHn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uw1-a7-Kt9"/>
+                            <constraint firstItem="WeA-KJ-vRf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Xl-Wb-TqR"/>
+                            <constraint firstItem="WeA-KJ-vRf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="X5t-9e-Egx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="scrollView" destination="hBL-7Z-rHn" id="TsH-AT-4eb"/>
+                        <outlet property="btnTapMe" destination="WeA-KJ-vRf" id="3Bd-cR-L9o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="29.23538230884558"/>
+        </scene>
+        <!--Yellow-->
+        <scene sceneID="f8R-AA-H46">
+            <objects>
+                <viewController storyboardIdentifier="VCYellow" id="KVB-Yf-Y9s" customClass="VCYellow" customModule="CustomTransition" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DYb-m4-1g8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfQ-RO-8SU">
+                                <rect key="frame" x="311" y="40" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="pbx-YI-HdA"/>
+                                    <constraint firstAttribute="width" constant="44" id="vsB-2G-8Bd"/>
+                                </constraints>
+                                <state key="normal" image="baseline_close_black_18dp"/>
+                                <connections>
+                                    <action selector="onBtnCloseTapped:" destination="KVB-Yf-Y9s" eventType="touchUpInside" id="A5M-aw-ueh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.72156862749999995" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tfQ-RO-8SU" firstAttribute="top" secondItem="x4c-6x-U13" secondAttribute="top" constant="20" id="YDM-pA-NIV"/>
+                            <constraint firstItem="x4c-6x-U13" firstAttribute="trailing" secondItem="tfQ-RO-8SU" secondAttribute="trailing" constant="20" id="mUL-dj-9vB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="x4c-6x-U13"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pke-hi-3dU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="827" y="31"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="baseline_close_black_18dp" width="36" height="36"/>
+    </resources>
 </document>
